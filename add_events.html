@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Volunteering_Events.css">
+    <link rel="stylesheet" href="css/addEvent1.css">
+    <link rel="stylesheet" href="css/addEvent.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+        <!-- <img src="logo.PNG" alt=""> -->
+        <h2 class="navbar-logo"><a>Volunteering Opportunities And Funds</a></h2>
+        <div class="navigation">
+            <ul>
+                <li><a class="active">Add Events</a></li>
+                <li><a class="#" href="./see_donation.html">See Donatio</a></li>
+                <li><a href="./index.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <h1>Add Events</h1>
+        <div class="employee-form">
+            <div>
+                <label>Organization/Company</label>
+                <input type="text" id="org">
+                <p id="orgError" class="Noman"></p>
+            </div>
+            <div>
+                <label>Volunteer Category</label>
+                <input type="text" id="categ">
+                <p id="catError" class="Noman"></p>
+            </div>
+            <div>
+                <label>Description</label>
+                <input type="text" id="descrip">
+                <p id="desError" class="Noman"></p>
+            </div>
+            <div class="add_events_btn">
+                <button onsubmit="return addEventsnom()">Add Events</button>
+            </div>
+        </div>
+
+        <br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Organization/Category</th>
+                            <th>Volunteer Category</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+                <table class="list" id="eventList">
+
+                </table>
+        </div>
+    </div>
+</body>
+<script src="./js/validation.js"></script>
+
+</html>

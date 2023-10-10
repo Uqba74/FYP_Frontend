@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuff Donation</title>
+
+   // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/donation.css"/>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <h2>Stuff Donation Form</h2>
+      <form action="/myaction.php"  name="myForm" onsubmit="return validateForm()" method="post">
+          <h4>Donor Name</h4>
+          <div class="input-group">
+              <div class="input-box" id="Fname">
+                  <input type="text" name="fname" placeholder="First Name" 
+                   class="name">
+                 <b> <span class="form-error"></span></b>
+                  <i class="fa fa-user icon"></i>
+              </div>
+
+              <div class="input-box" id="FLname">
+                <input type="text" name="flname" placeholder="Last Name" 
+                 class="name">
+                <b> <span class="form-error"></span></b>
+                <i class="fa fa-user icon"></i>
+            </div>
+          </div>
+
+
+          <h4>Address</h4>
+          <div class="input-group">
+            <div class="input-box" >
+                <input type="email" name="femail" placeholder="Street Address" 
+                 class="name" required>
+                <b> <span class="form-error"></span></b>
+            </div>
+
+           
+        </div>
+
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" name="fname" placeholder="City" 
+                 class="name" required>
+               <b> <span class="form-error"></span></b>
+            </div>
+
+            <div class="input-box" >
+              <input type="text" name="flname" placeholder="Region" 
+               class="name" required>
+              <b> <span class="form-error"></span></b>
+          </div>
+        </div>
+
+        <div class="input-group">
+            <div class="input-box">
+                <h4>Phone No</h4>
+                <div class="input-box" >
+                    <input type="email" name="femail" placeholder="#### #######" 
+                     class="name" required>
+                </div>
+            </div>
+            
+</div>
+
+<div class="input-group">
+    <div class="input-box">
+        <h4>Type Of Donation</h4>
+        <div class="input-box">
+            <select name="" id="">
+              <option value="">Food</option>
+              <option value="">Clothes</option>
+              <option value="">Shoes</option>
+            </select>
+        
+        </div>
+        
+    </div>
+    
+</div>
+
+<div class="input-group">
+    <div class="input-box">
+        <h4>Description</h4>
+        <div class="input-box" >
+            <textarea name="desc" id="des" cols="50" rows="5" required>
+            </textarea>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+<div class="input-group">
+    <div class="input-box">
+        <button type="submit">DONATE</button>
+    </div>
+    </div>
+
+
+      </form>   
+  </div>
+
+
+</body>
+<script src="./js/validation.js"></script>
+</html>
+
+  
+
+
+
+
+  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User Registration</title>
+	<link rel="stylesheet" href="css/user_signup.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">User Registration</h1>
+		<form class="login_form" action="" method="post" name="form" onsubmit="return validUser()">
+            
+            <div class="font">Full name</div>
+			<input autocomplete="off" type="text" name="name" id="fullName" >
+			<p id="nameError" class="Noman"></p>
+
+			<div class="font font1">Email or name</div>
+			<input autocomplete="off" type="text" name="email" id="fullEmail" >
+			<p id="emailError" class="Noman"></p>
+
+			<div class="font font2">Password</div>
+			<input type="password" name="password" id="password">
+			<p id="passwordError" class="Noman"></p>
+
+            <div class="font font3">Confirm Password</div>
+			<input type="confirm_password" name="confirm_password" id="confirmpass" >
+            <p id="confError" class="Noman"></p>
+
+        
+			<input type="checkbox" class="checkbox"><a>Remember Password</a>
+			<button src="admin_login.html" type="submit" >Register</button>
+			
+
+	
+
+		</form>
+		<div class="social-media">
+			<p>Or Sign in with Social platforms</p>
+			<img src="images/f.jpg">
+			<img src="images/g1.jpg">
+			<img src="images/link.jpg"> 
+		</div>
+
+	</div>	
+	<script src="./js/validation.js"></script>
+</body>
+</html>

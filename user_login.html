@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User Login</title>
+	<link rel="stylesheet" href="css/user_login.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">User Login</h1>
+		<form class="login_form" action="./user_login.html" method="post" name="form" onsubmit="return validatedFlogin()">
+			<div class="font">Email or Phone</div>
+			<input autocomplete="off" type="text" name="email" id="username">
+			<p id="userError" class="error"></p>
+			<div id="email_error">Invalid Email or Username</div>
+			<div id="InValid_Email">You have entered an invalid email address</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password" id="userpassword">
+			<p id="passError" class="error"></p>
+			<div id="pass_error">Invalid Password</div>
+			<input type="checkbox" class="checkbox"><a>Remember Password</a>
+			<button href="/index.html" type="submit">Login</button>
+			<b><a href="user_signup.html" style="margin-left: -450px; margin-top: 15%; color: blue;"> Register!</a></b>
+			
+		</form>
+		
+		<div class="social-media">
+			<p>Or Sign in with Social platforms</p>
+			<img src="images/f.jpg">
+			<img src="images/g1.jpg">
+			<img src="images/link.jpg"> 
+		</div>
+
+	</div>	
+	<script src="./js/validation.js"></script>
+</body>
+</html>

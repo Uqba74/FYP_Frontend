@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/volun_reg2.css">
+    <link rel="stylesheet" href="css/volun_reg1.css">
+    <link rel="stylesheet" href="css/volun_reg.css">
+
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>
+        Volunteer Registration;
+    </title>
+</head>
+
+<body>
+    <nav>
+        <img src="logo.PNG" alt="">
+        <h2 class="navbar-logo"><a href="#">Volunteering Opportunities And Funds</a></h2>
+        <div class="navigation">
+            <ul>
+                <li><a class="active" href="#" >Volunteer Registration</a></li>
+                <li><a class="#" href="./Volunteering_Events.html">Back</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+<div class="wrapper">
+    <header>Volunteer Registration</header>
+    <div class="employee-form">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                <input type="text" name="fullName" id="fullName">
+            </div>
+            <div>
+                <label>Email Id</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+            <div>
+                <label>Volunteer Category</label>
+                <input type="text" name="salary" id="salary" required>
+            </div>
+            <div>
+                <label>City</label>
+                <input type="text" name="city" id="city" required>
+            </div>
+            <div  class="form-action-buttons">
+                <input type="submit" value="Submit" required>
+            </div>
+        </form>
+        
+</div>
+		
+    </div>
+    <script src="volun_reg.js"></script>
+</body>
+</html>

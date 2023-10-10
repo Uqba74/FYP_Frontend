@@ -1,0 +1,126 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-family:sans-serif;
+}
+.container{
+	position: relative;
+	margin-top: 100px;
+	width: 550px;
+	height: auto;
+	background: #dedede;
+	border-radius: 10px;
+	/* background-color: sandybrown; */
+	border: 2px solid salmon;
+	border-width: 5px;
+}
+.label{
+	padding: 20px 130px;
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+	margin-top: 5px;
+	text-align: center;
+	text-shadow: -1px 2px 0px black;
+}
+.login_form{
+	padding: 20px 40px;
+}
+.login_form .font{
+	font-size: 18px;
+	color: black !important;
+	margin: 5px 0;
+	font-weight: bold;
+	}
+.login_form input{
+	height: 40px;
+	width: 350px;
+	padding: 0 5px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+/* .login_form input:focus{
+	background-color : salmon;
+} */
+
+.login_form .font2{
+	margin-top: 20px;
+}
+.login_form button{
+	margin: 30px 100px 30px 100px;
+	/* margin: 10px auto !important; */
+	height: 45px;
+	width: 250px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: salmon;
+	border-radius: 10px;
+	border: 1px solid salmon;
+	transition: .5s;
+	border-radius: 25px;
+}
+.login_form button:hover{
+	background: #151c6a;
+}
+.login_form #email_error,
+.login_form #pass_error,
+.login_form #InValid_Email{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
+.social-media{
+	margin: 10px auto;
+	text-align: center;
+}
+.social-media p{
+	color: black !important;
+	font-style: italic;
+	font-weight: bold;
+}
+.social-media img{
+	width: 30px;
+	margin: 10px 10px;
+	box-shadow: 0 0 20px 0 #f7f7f7;
+	cursor: pointer;
+}
+.checkbox{
+	/* margin: 20px -153px; */
+	margin-left: -150px !important;
+	margin-top: 20px !important;
+	border-radius: 10px !important;
+}
+.checkbox:active{
+	color: #C62828 !important;
+	/* background-color: red !important; */
+}
+a{
+	color: black;
+	margin-left: -145px;
+	margin-top: 30px;
+	font-weight: bold;
+	position: absolute;
+	font-size: 20px;
+
+}
